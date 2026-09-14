@@ -19,8 +19,8 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 ## TP02 — HTML
 
 - Hypothèse :
-- Action :
-- Résultat :
+- Action : ajout d'un header, section avec ul et footer
+- Résultat : page fonctionnelle avec titres dans le bon ordre
 - Point non compris :
 
 ## TP03 — Formulaire
