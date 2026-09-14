@@ -11,10 +11,10 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP01 — Démarrer
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : Sans le js le texte 'Votre point de départ est prêt.' ne s'affichera pas.
+- Action : npm start
+- Résultat : serveur et page fonctionel
+- Point non compris : aucun
 
 ## TP02 — HTML
 
