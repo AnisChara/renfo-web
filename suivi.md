@@ -25,9 +25,9 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP03 — Formulaire
 
-- Hypothèse :
-- Action :
-- Résultat :
+- Hypothèse : l'envoi se bloquera car le champ messsage est required
+- Action : ajout du form et du script
+- Résultat : page et form fonctionnel
 - Point non compris :
 
 ## TP04 — Responsive
