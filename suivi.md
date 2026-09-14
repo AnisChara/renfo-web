@@ -32,10 +32,10 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP04 — Responsive
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris, test 360 / 1280 :
+- Hypothèse : il y aura un scroll
+- Action : mise a jour de la largeur des elements et flex direction column pour le form
+- Résultat : il y a un scroll lateral quand le message est trop long
+- Point non compris, test 360 / 1280 : je n'arrive pas a enlever le scroll horizontal, meme avec max-width
 
 ## Commandes essayées
 
