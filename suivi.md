@@ -4,10 +4,10 @@ Note ton avancée après chaque TP. Reste factuel, sans données personnelles. C
 
 ## TP00 — Diagnostic
 
-- Hypothèse :
-- Action :
-- Résultat :
-- Point non compris :
+- Hypothèse : les étiquettes étaient deja visibles.
+- Action : remplacement des div par les bonnes balises (h1,h2,label,main,...), indentation, supression de classe et style de balise direct.
+- Résultat : étiquette fonctionnelles, navigable via tab, largeur mal reglée.
+- Point non compris : reglage de la largeur, le header et contenu ont toujours un margin je ne sais pas pourquoi.
 
 ## TP01 — Démarrer
 
