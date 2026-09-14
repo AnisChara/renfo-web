@@ -37,6 +37,15 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris : rien
 - Réponse à la question « Dans le suivi » du TP : avec textContent les balises ne sont prise en compte que comme du texte
 
+### TP8 
+
+- J'ai prédit : que la reponse s'afficherai selon les reponses prédéfinies
+- Nous avons fait : l'implementation de la reponse du chat bot
+- J'ai observé : que cela fonctionnait
+- J'ai compris : le fonctionnement global
+- Je n'ai pas compris : rien
+- Réponse à la question « Dans le suivi » du TP : brain.js ne peut pas utiliser document car c'est un module.
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :
