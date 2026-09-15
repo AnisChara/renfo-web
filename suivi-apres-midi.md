@@ -55,6 +55,15 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris : rien
 - Réponse à la question « Dans le suivi » du TP : brain.js fait office de backend, view.js gere le rendu, app.js est le controleur qui les relie.
 
+### TP10
+
+- J'ai prédit : que les messages seraient persistants
+- Nous avons fait : le stockage sur localstorage ainsi que le bouton effacer
+- J'ai observé : que cela fonctionnait
+- J'ai compris : tout
+- Je n'ai pas compris : rien
+- Réponse à la question « Dans le suivi » du TP : nous avons prédit que cela marcherait seulement sur un autre onglet avec la meme url, pas en navigation privée ou localhost.
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :
