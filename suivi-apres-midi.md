@@ -46,6 +46,15 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris : rien
 - Réponse à la question « Dans le suivi » du TP : brain.js ne peut pas utiliser document car c'est un module.
 
+### TP9
+
+- J'ai prédit : qu'il s'agissait de separer les responsabilités 
+- Nous avons fait : l'implementation de view.js
+- J'ai observé : que cela fonctionnait de la meme maniere
+- J'ai compris : qu'il s'agissait purement d'architecture
+- Je n'ai pas compris : rien
+- Réponse à la question « Dans le suivi » du TP : brain.js fait office de backend, view.js gere le rendu, app.js est le controleur qui les relie.
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :

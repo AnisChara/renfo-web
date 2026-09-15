@@ -1,4 +1,5 @@
 import { validateMessage, replyTo } from './brain.js';
+import { renderMessages } from './view.js';
 
 document.querySelector('#status').textContent = 'Votre point de départ est prêt.';
 
@@ -7,6 +8,7 @@ const statut = document.querySelector('#status');
 const versionElt = document.querySelector('#version');
 const champ = document.querySelector('#message');
 const messages = document.querySelector('#messages');
+const historique = [];
 
 // J1 : interface seule, on bloque l’envoi et on l’explique.
 formulaire?.addEventListener('submit', (event) => {
@@ -15,20 +17,16 @@ formulaire?.addEventListener('submit', (event) => {
     statut.textContent = 'Interface prête ; les réponses arrivent au J2.';
   }
   const cleanedMessage = validateMessage(champ.value);
-  console.log(cleanedMessage)
 
   if (!cleanedMessage.ok) {
     statut.textContent = cleanedMessage.error;
     return;
   }
 
-  let message = document.createElement('li');
-  message.textContent = "Vous : "+cleanedMessage.value
-  messages.append(message);
+  historique.push({'role':'user', 'text':cleanedMessage.value})
+  historique.push({'role':'assistant', 'text':replyTo(cleanedMessage.value)})
 
-  let response = document.createElement('li');
-  response.textContent = "Cap Web : "+replyTo(cleanedMessage.value)
-  messages.append(response);
+  renderMessages(historique,messages);
 
   champ.value = '';
   champ.focus();
