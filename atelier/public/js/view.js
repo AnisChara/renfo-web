@@ -1,5 +1,5 @@
 export function renderMessages(messages, container) {
-    let lignes = [];
+    const lignes = [];
     messages.forEach(message => {
         const ligne = document.createElement('li');
 

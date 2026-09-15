@@ -64,6 +64,34 @@ Recopiez ce bloc autant de fois que nécessaire.
 - Je n'ai pas compris : rien
 - Réponse à la question « Dans le suivi » du TP : nous avons prédit que cela marcherait seulement sur un autre onglet avec la meme url, pas en navigation privée ou localhost.
 
+### TP11
+
+- J'ai prédit : qu'il s'agissait de tests
+- Nous avons fait : les tests pour tous les cas cités
+- J'ai observé : que cela fonctionnait
+- J'ai compris : tout
+- Je n'ai pas compris : rien
+- Réponse à la question « Dans le suivi » du TP : 
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  actual expected
+  'pas cyompris'
+      at TestContext.<anonymous> (file:///C:/Users/Anis/Desktop/demarrage-etudiants-j1/atelier/tests/brain.test.js:19:12)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Suite.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Suite.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'pas compris',
+    expected: 'yo',
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+  Cela car j'ai retiré le toLowerCase dans replyTo()
+
 ## Épreuve de l'explication (TP12)
 
 - Ce que je n'ai pas su expliquer :
