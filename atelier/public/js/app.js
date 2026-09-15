@@ -8,7 +8,22 @@ const statut = document.querySelector('#status');
 const versionElt = document.querySelector('#version');
 const champ = document.querySelector('#message');
 const messages = document.querySelector('#messages');
-const historique = [];
+const effacerButton = document.querySelector('#effacer')
+let historique = [];
+
+try {
+  historique = JSON.parse(localStorage.getItem('capweb.historique'))
+  historique.forEach(ligne => {
+    if (ligne.role !== "user" && ligne.role !== "assistant") throw new Error;
+    if (validateMessage(ligne.text).ok === false) throw new Error;
+  });
+    renderMessages(historique,messages);
+    
+} catch (error) {
+  historique = []
+  localStorage.removeItem('capweb.historique')
+  statut.textContent = "Impossible de récuperer la conversation."
+}
 
 // J1 : interface seule, on bloque l’envoi et on l’explique.
 formulaire?.addEventListener('submit', (event) => {
@@ -26,6 +41,8 @@ formulaire?.addEventListener('submit', (event) => {
   historique.push({'role':'user', 'text':cleanedMessage.value})
   historique.push({'role':'assistant', 'text':replyTo(cleanedMessage.value)})
 
+  localStorage.setItem('capweb.historique', JSON.stringify(historique))
+
   renderMessages(historique,messages);
 
   champ.value = '';
@@ -33,6 +50,13 @@ formulaire?.addEventListener('submit', (event) => {
   statut.textContent = "";
 
 });
+
+effacerButton?.addEventListener('click', event => {
+    event.preventDefault();
+    historique = [];
+    localStorage.removeItem('capweb.historique')
+    renderMessages(historique,messages);
+})
 
 // Version du serveur local, échec discret si indisponible.
 fetch('/version.json', { headers: { accept: 'application/json' } })
